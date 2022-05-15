@@ -1,0 +1,18 @@
+import { Component, Input, OnInit } from '@angular/core';
+import { Country } from 'src/app/pais/interfaces/pais.interface';
+
+@Component({
+  selector: 'app-pais-tabla',
+  templateUrl: './pais-tabla.component.html',
+  styles: [
+  ]
+})
+export class PaisTablaComponent {
+
+  @Input() paises: Country[] = []; //recibe el pais que escribio el usuario
+
+  constructor() { }
+
+ 
+  
+}
